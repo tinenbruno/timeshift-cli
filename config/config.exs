@@ -2,6 +2,13 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :exvcr,
+  vcr_cassette_library_dir: "fixture/vcr_cassettes",
+  custom_cassette_library_dir: "fixture/custom_cassettes",
+  filter_url_params: false,
+  filter_request_headers: [],
+  response_headers_blacklist: []
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,

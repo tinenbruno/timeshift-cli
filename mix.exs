@@ -24,7 +24,8 @@ defmodule TimeshiftCLI.MixProject do
       {:google_api_sheets, "~> 0.0.1"},
       {:goth, "~> 0.11.0"},
       {:poison, "~> 3.0"},
-      {:timex, "~> 3.1"}
+      {:timex, "~> 3.1"},
+      {:exvcr, "~> 0.10", only: :test}
     ]
   end
 end
