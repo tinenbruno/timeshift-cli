@@ -24,3 +24,5 @@ timeshift_cli-*.tar
 
 # Vim tags
 tags
+
+/.secret/*.json

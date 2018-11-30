@@ -27,4 +27,10 @@ use Mix.Config
 # Configuration from the imported file will override the ones defined
 # here (which is why it is important to import them last).
 #
-#     import_config "#{Mix.env()}.exs"
+
+config :goth, json: "./.secret/creds.json" |> File.read!()
+
+config :timeshift_cli,
+  spreadsheet_id: "1mORTn0sZ7GyX_T8KmiQyy8DuGDOWX6oOFUbDcn6fPnc",
+  header_size: 5,
+  sheet_name: "Sheet1"

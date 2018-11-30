@@ -5,9 +5,9 @@ defmodule TimeshiftCLI.GoogleSheetsClient do
 
   alias GoogleApi.Sheets.V4.{Api.Spreadsheets, Connection}
 
-  @spreadsheet_id "1mORTn0sZ7GyX_T8KmiQyy8DuGDOWX6oOFUbDcn6fPnc"
-  @header_size 5
-  @sheet_name "Sheet1"
+  @spreadsheet_id Application.get_env(:timeshift_cli, :spreadsheet_id)
+  @header_size Application.get_env(:timeshift_cli, :header_size)
+  @sheet_name Application.get_env(:timeshift_cli, :sheet_name)
   @kinds ~w(shift_start lunch_start lunch_end shift_end extra_start extra_end)a
   @column_kinds %{
     shift_start: "C",

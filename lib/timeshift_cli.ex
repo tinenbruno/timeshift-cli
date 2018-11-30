@@ -9,8 +9,6 @@ defmodule TimeshiftCLI do
   TimeshiftCLI for FDTE hour easy tracking.
   """)
 
-  default_command(:register)
-
   command :register do
     aliases([:punch])
 
